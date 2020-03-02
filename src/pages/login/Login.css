@@ -1,0 +1,21 @@
+body {
+background-image: url(../../asserts/bc.jpg);
+background-size: 100% 100%;
+}
+.padCenter {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    font-family: fantasy;
+}
+.loginCenter {
+    background-color:rgba(244,251,251,0.47);
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding-right: 109px;
+    padding-top: 60px;
+    border-radius: 20px;
+}
