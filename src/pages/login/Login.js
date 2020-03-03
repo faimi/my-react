@@ -2,7 +2,10 @@ import React from "react";
 import { Form, Input, Button, Checkbox, Row, Col } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { withRouter } from "react-router-dom";
+import { createBrowserHistory } from "history";
 import "./Login.css";
+// react-router4.0官方文档里已经废弃了：BrowserHistory
+const history = createBrowserHistory();
 
 const Login = () => {
   const layout = {
@@ -20,7 +23,8 @@ const Login = () => {
     }
   };
   const onFinish = values => {
-    console.log("Success:", values);
+    console.log(values);
+    history.push("/admin");
   };
 
   const onFinishFailed = errorInfo => {
