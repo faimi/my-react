@@ -43,6 +43,7 @@ const imageInlineSizeLimit = parseInt(
 const useTypeScript = fs.existsSync(paths.appTsConfig);
 
 // style files regexes
+
 // 修改css配置
 // const cssRegex = /\.css$/;
 const cssRegex = /\.(css|less)$/;
