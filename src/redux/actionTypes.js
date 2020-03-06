@@ -1,5 +1,6 @@
-const CES='CES'
+const LIST='LIST'
 
 export default {
-    CES
+    LIST
 }
+
