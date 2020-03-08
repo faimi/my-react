@@ -8,7 +8,7 @@ import {
   TeamOutlined,
   UserOutlined
 } from "@ant-design/icons";
-
+import Cal from "../../components/cal/cal";
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
@@ -27,8 +27,16 @@ class SiderDemo extends React.Component {
         <Layout>
           <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
             <Row>
-              <Col span={12} className="faimi"><img className="reactLogo" src="asserts/timg.jpg" alt=""/>&nbsp;&nbsp;&nbsp;Faimi's React project</Col>
-              <Col span={12} className="reactAdmin"><img className="reactTx" src="asserts/tx.jpg" alt=""/>&nbsp;&nbsp;&nbsp;<span>管理员&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><span>退出</span></Col>
+              <Col span={12} className="faimi">
+                <img className="reactLogo" src="asserts/timg.jpg" alt="" />
+                &nbsp;&nbsp;&nbsp;Faimi's React project
+              </Col>
+              <Col span={12} className="reactAdmin">
+                <img className="reactTx" src="asserts/tx.jpg" alt="" />
+                &nbsp;&nbsp;&nbsp;
+                <span>管理员&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                <span>退出</span>
+              </Col>
             </Row>
           </Header>
         </Layout>
@@ -49,7 +57,7 @@ class SiderDemo extends React.Component {
                   </span>
                 }
               >
-                <Menu.Item key="3">Tom</Menu.Item>
+                {/* <Menu.Item key="3"><Link to="/cal">Tom</Link></Menu.Item> */}
                 <Menu.Item key="4">Bill</Menu.Item>
                 <Menu.Item key="5">Alex</Menu.Item>
               </SubMenu>
@@ -90,6 +98,7 @@ class SiderDemo extends React.Component {
                 style={{ padding: 24, minHeight: 360 }}
               >
                 Bill is a cat.
+                <Cal />
               </div>
             </Content>
             <Footer style={{ textAlign: "center" }}>

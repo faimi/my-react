@@ -12,9 +12,9 @@ import {
 import store from "./redux";
 import { Provider } from "react-redux";
 import { createBrowserHistory } from "history";
-import "./index.css";
 import App from "./pages/MainPageLayout/App";
 import Login from "./pages/login/Login";
+import "./index.css";
 import "antd/dist/antd.css";
 import * as serviceWorker from "./serviceWorker";
 
