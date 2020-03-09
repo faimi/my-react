@@ -12,8 +12,9 @@ import {
 import store from "./redux";
 import { Provider } from "react-redux";
 import { createBrowserHistory } from "history";
-import App from "./pages/MainPageLayout/App";
-import Login from "./pages/login/Login";
+import CalPage from "./pages/calPage/calPage"
+import Login from "./pages/login/login";
+import Echarts from "./pages/echarts/echarts"
 import "./index.css";
 import "antd/dist/antd.css";
 import * as serviceWorker from "./serviceWorker";
@@ -25,10 +26,11 @@ ReactDOM.render(
     {/* <Router history={history}>的实现效果和<BrowserRouter>一样;<BrowserRouter>和<HashRouter>的区别是：HashRouter有# */}
     <Router history={history}>
       {/* <Switch> */}
-      <Route path="/admin" component={App}></Route>
+      <Route path="/admin" component={CalPage}></Route>
+      <Route path="/echarts" component={Echarts}></Route>
       <Route exact path="/" component={Login}></Route>
       {/* /admin不能放到/里面，没有/admin点击跳转跳转不了 */}
-      <Redirect to="/" />
+      {/* <Redirect to="/" /> */}
       {/* </Switch> */}
     </Router>
   </Provider>,

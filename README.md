@@ -13,3 +13,4 @@
 - npm install history --save
 
 - npm install less less-loader -D
+- npm install echarts

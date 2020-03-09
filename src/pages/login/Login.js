@@ -3,15 +3,14 @@ import { Form, Input, Button, Checkbox, Row, Col } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { withRouter } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import "./Login.less";
-import { render } from "@testing-library/react";
+import "./login.less";
 // react-router4.0官方文档里已经废弃了：BrowserHistory
 const history = createBrowserHistory();
 
 class Login extends Component {
   constructor(props) {
     super(props);
-  };
+  }
   layout = {
     labelCol: {
       span: 8
@@ -78,7 +77,11 @@ class Login extends Component {
               />
             </Form.Item>
 
-            <Form.Item {...this.tailLayout} name="remember" valuePropName="checked">
+            <Form.Item
+              {...this.tailLayout}
+              name="remember"
+              valuePropName="checked"
+            >
               <Checkbox>记住我</Checkbox>
             </Form.Item>
 
