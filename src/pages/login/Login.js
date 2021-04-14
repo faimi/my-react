@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Form, Input, Button, Checkbox, Row, Col } from "antd";
+import { Form, Input, Button, Checkbox} from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { withRouter } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import "./login.less";
+import "./Login.less";
 // react-router4.0官方文档里已经废弃了：BrowserHistory
 const history = createBrowserHistory();
 

@@ -4,7 +4,7 @@ import HeaderLayout from "../../components/mainPagelayout/headerLayout";
 import MainPageLayout from "../../components/mainPagelayout/siderLayout";
 import Footer from "../../components/footer/footer";
 import { Layout } from "antd";
-const { Header, Content } = Layout;
+const { Header, Content, Breadcrumb } = Layout;
 class echart extends React.Component {
   render() {
     return (

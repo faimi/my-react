@@ -13,7 +13,7 @@ import store from "./redux";
 import { Provider } from "react-redux";
 import { createBrowserHistory } from "history";
 import CalPage from "./pages/calPage/calPage"
-import Login from "./pages/login/login";
+import Login from "./../src/pages/login/Login";
 import Echarts from "./pages/echarts/echarts"
 import "./index.css";
 import "antd/dist/antd.css";
